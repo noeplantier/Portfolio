@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: #fff;
+  
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  
+    .navLinks {
+      display: flex;
+      gap: 2rem;
+  
+      a {
+        color: #fff;
+        text-decoration: none;
+        &:hover {
+          color:#dca418;
+        }
+      }
+    }
+  }
+  

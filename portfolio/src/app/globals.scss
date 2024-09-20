@@ -1,0 +1,24 @@
+// Fichier SCSS global pour styliser toute l'application
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #0e2a47, #1d4f6f);
+    color: #ffffff;
+  }
+  
+  // Import des styles spécifiques
+  @import './styles/header.module.scss';
+  @import './styles/navbar.module.scss';
+  @import './styles/hero.module.scss';
+  @import './styles/about.module.scss';
+  @import './styles/contact.module.scss';
+  @import './styles/projects.module.scss';
+  @import './styles/skills.module.scss';
+ 
+  
