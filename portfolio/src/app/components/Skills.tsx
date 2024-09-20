@@ -1,4 +1,7 @@
-const Skills: React.FC = () => {
+import "../styles/_skills.scss";
+
+
+function Skills () {
     return (
       <section id="skills" className="skills">
         <h2>Compétences</h2>

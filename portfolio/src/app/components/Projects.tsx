@@ -1,4 +1,8 @@
-const Projects: React.FC = () => {
+import "../styles/_projects.scss";
+
+
+
+function Projects () {
     return (
       <section id="projects" className="projects">
         <h2>Mes Projets</h2>

@@ -1,0 +1,22 @@
+// Fichier SCSS global pour styliser toute l'application
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  // Import des styles spécifiques
+  @import './styles/navbar';
+  @import './styles/hero';
+  @import './styles/about';
+  @import './styles/contact';
+  @import './styles/projects';
+  @import './styles/skills';
+  // Ajoute tous les autres fichiers SCSS
+  

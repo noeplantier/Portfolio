@@ -1,10 +1,12 @@
 import Link from 'next/link';
+import "../styles/_navbar.scss";
 
-const Navbar: React.FC = () => {
+
+function Navbar () {
   return (
     <nav className="navbar">
       <div className="logo">
-        <Link href="/">Charly Dev</Link>
+        <Link href="/">Noé Développeur Web & Mobile</Link>
       </div>
       <ul className="nav-links">
         <li><Link href="#about">À propos</Link></li>
