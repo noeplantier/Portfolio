@@ -1,0 +1,11 @@
+.skills {
+    padding: 100px 20px;
+    background-color: #f4f4f4;
+    .skills-list {
+      display: flex;
+      justify-content: space-around;
+      .skill {
+        background-color: #0070f3;
+      }
+    }
+}

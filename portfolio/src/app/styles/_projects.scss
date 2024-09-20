@@ -1,0 +1,15 @@
+.projects {
+    padding: 100px 20px;
+    background-color: white;
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      .project-card {
+        background-color: #eaeaea;
+        padding: 20px;
+        text-align: center;
+      }
+    }
+  }
+  
