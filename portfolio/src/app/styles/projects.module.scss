@@ -1,0 +1,39 @@
+.projects {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  text-align: center;
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .projectList {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+    .projectCard {
+      background-color: #f0f0f0;
+      padding: 1rem;
+      border-radius: 10px;
+      width: 300px;
+      text-align: center;
+
+      img {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+      }
+
+      p {
+        font-size: 1rem;
+        color: #555;
+      }
+    }
+  }
+}

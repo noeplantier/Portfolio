@@ -12,11 +12,12 @@
   }
   
   // Import des styles spécifiques
-  @import './styles/navbar';
-  @import './styles/hero';
-  @import './styles/about';
-  @import './styles/contact';
-  @import './styles/projects';
-  @import './styles/skills';
-  // Ajoute tous les autres fichiers SCSS
+  @import './styles/header.module.scss';
+  @import './styles/navbar.module.scss';
+  @import './styles/hero.module.scss';
+  @import './styles/about.module.scss';
+  @import './styles/contact.module.scss';
+  @import './styles/projects.module.scss';
+  @import './styles/skills.module.scss';
+ 
   

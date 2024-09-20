@@ -1,17 +1,13 @@
-import "../styles/_hero.scss";
+import styles from '../styles/hero.module.scss';
 
-
-function Hero ()  {
-    return (
-      <section className="hero">
-        <div className="hero-content">
-          <h1>Noé Développeur Web & Mobile</h1>
-          <p>Développeur Web Full-Stack basé à Bordeaux</p>
-          <a href="#projects" className="cta">Voir mes projets</a>
-        </div>
-      </section>
-    );
-  }
-  
-  export default Hero;
-  
+export default function Hero() {
+  return (
+    <section id="hero" className={styles.hero}>
+      <div className={styles.content}>
+        <h1>Noé Plantier</h1>
+        <p>Développeur Fullstack Junior</p>
+        <a href="#projects" className={styles.cta}>Voir mes projets</a>
+      </div>
+    </section>
+  );
+}

@@ -1,21 +1,15 @@
-import Link from 'next/link';
-import "../styles/_navbar.scss";
+import styles from '../styles/navbar.module.scss';
 
-
-function Navbar () {
+export default function NavBar() {
   return (
-    <nav className="navbar">
-      <div className="logo">
-        <Link href="/">Noé Développeur Web & Mobile</Link>
-      </div>
-      <ul className="nav-links">
-        <li><Link href="#about">À propos</Link></li>
-        <li><Link href="#projects">Projets</Link></li>
-        <li><Link href="#skills">Compétences</Link></li>
-        <li><Link href="#contact">Contact</Link></li>
+    <nav className={styles.navbar}>
+      <ul className={styles.navLinks}>
+        <li><a href="#hero">Accueil</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   );
 }
-
-export default Navbar;
