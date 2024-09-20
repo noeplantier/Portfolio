@@ -2,6 +2,7 @@
   padding: 4rem 2rem;
   text-align: center;
 
+
   h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
@@ -13,18 +14,28 @@
     flex-wrap: wrap;
     gap: 2rem;
 
+
     .projectCard {
-      background-color: #fff;
+  
+      border: 1px solid  #ffc229;
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       padding: 1.5rem;
       text-align: center;
-      width: 300px;
+      width: 20rem;
+      height: 28rem;
+      transition: transform 0.3s ease-in-out;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
 
       img {
         border-radius: 8px;
         max-width: 100%;
-        height: auto;
+        width: 40vh;
+        height: 23vh;
+
       }
 
       h3 {
@@ -33,7 +44,8 @@
       }
 
       p {
-        color: #666;
+        color:linear-gradient(135deg, #0e2a47, #1d4f6f);
+
       }
     }
   }
