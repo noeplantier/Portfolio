@@ -1,24 +1,52 @@
-// Fichier SCSS global pour styliser toute l'application
 * {
+  margin: 0;
+  padding: 0;
+}
 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #0e2a47, #1d4f6f);
-    color: #ffffff;
-  }
-  
-  // Import des styles spécifiques
-  @import './styles/header.module.scss';
-  @import './styles/navbar.module.scss';
-  @import './styles/hero.module.scss';
-  @import './styles/about.module.scss';
-  @import './styles/contact.module.scss';
-  @import './styles/projects.module.scss';
-  @import './styles/skills.module.scss';
- 
-  
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #001831, #026cad);
+  color: #ffffff;
+  transition:  0.7s ease;
+}
+
+h1 {
+  position: relative;
+  display: inline-block;
+  font-size: 2.5rem;
+  color: #ffffff;
+  transition: transform 0.7s ease, 
+
+}
+
+
+h1:hover {
+  transform: scale(1.2); 
+}
+
+
+
+h1::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: linear-gradient(90deg, rgba(255, 194, 41, 0) 0%, rgba(255, 194, 41, 1) 50%, rgba(255, 194, 41, 0) 100%);
+  transition: transform 0.5s ease;
+}
+
+
+h1:hover {
+  color: #ffc229; 
+}
+
+// Import des styles spécifiques
+@import './styles/header.module.scss';
+@import './styles/navbar.module.scss';
+@import './styles/hero.module.scss';
+@import './styles/about.module.scss';
+@import './styles/contact.module.scss';
+@import './styles/projects.module.scss';
+@import './styles/skills.module.scss';

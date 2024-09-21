@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import './globals.scss'; // Remplace les styles globaux par tes propres fichiers SASS
+import './globals.scss'; 
 
 export const metadata: Metadata = {
-  title: "Mon Site Personnalisé",
+  title: "Noé Plantier - Web & Mobile Developer",
   description: "Mon site créé avec Next.js",
 };
 
