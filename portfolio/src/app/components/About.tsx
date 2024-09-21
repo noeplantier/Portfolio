@@ -5,7 +5,7 @@ import styles from '../styles/about.module.scss';
 
 export default function About() {
   const [displayedText, setDisplayedText] = useState('');
-  const fullText = 'Ennchanté ! Noé Plantier, développeur web full-stack avec une passion pour la création d\'expériences web et mobiles. Après une formation intense à l\'École O\'Clock. J\'ai acquis une solide expérience en React, Node.js, SCSS, TypeScript. Basé à Bordeaux, je suis motivé par l\'innovation et l\'élégance dans le code.';
+  const fullText = "Ennchanté ! Noé Plantier, développeur web full-stack avec une passion pour la création d\'expériences web et mobiles. Après une formation intense à l\'École O\'Clock. J\'ai acquis une solide expérience en React, Node.js, SCSS, TypeScript. Basé à Bordeaux, je suis fasciné par l\'innovation et l\'élégance dans le code."
 
   useEffect(() => {
     let index = 0;
@@ -13,7 +13,7 @@ export default function About() {
       setDisplayedText((prev) => prev + fullText[index]);
       index++;
       if (index === fullText.length) clearInterval(typingInterval);
-    }, 70); // Vitesse de frappe (1 ms entre chaque lettre)
+    }, 70); 
     return () => clearInterval(typingInterval);
   }, []);
 

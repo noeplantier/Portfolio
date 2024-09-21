@@ -2,23 +2,28 @@
   padding: 4rem 2rem;
   text-align: center;
   margin-bottom: 8rem;
+  animation: fadeIn 2s ease-in-out;
 
   h1 {
     font-size: 3.5rem;
     margin-bottom: 6rem;
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: scale(1.1);
+      color: #ffc229;
+    }
   }
-
-
-  h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  
-   }
 
   p {
     font-weight: 900;
     font-size: 1.25rem;
     max-width: 800px;
     margin: 0 auto;
+    opacity: 0.8;
   }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }

@@ -4,6 +4,8 @@ export default function Contact() {
   return (
     <section id="contact" className={styles.contact}>
       <h1>Contactez-moi</h1>
+      <h2>Prenez contact avec moi pour tout projet professionel ou personnel qui nécessite un site web ou même l'aide d'un développeur :</h2>
+
       <form>
         <div className={styles.formGroup}>
           <label htmlFor="name">Nom</label>

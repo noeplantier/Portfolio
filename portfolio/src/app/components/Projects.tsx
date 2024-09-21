@@ -11,6 +11,7 @@ export default function Projects() {
   return (
     <section id="projects" className={styles.projects}>
       <h1>Mes Projets</h1>
+      <h2>Quelques projets professionels, créés pour des entreprises mais aussi créés par passion.</h2>
       <div className={styles.projectList}>
         {projects.map((project, index) => (
           <div key={index} className={styles.projectCard}>
