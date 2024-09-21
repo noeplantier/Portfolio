@@ -3,11 +3,19 @@ import styles from '../styles/contact.module.scss';
 export default function Contact() {
   return (
     <section id="contact" className={styles.contact}>
-      <h2>Contactez-moi</h2>
+      <h1>Contactez-moi</h1>
       <form>
         <div className={styles.formGroup}>
           <label htmlFor="name">Nom</label>
           <input type="text" id="name" name="name" required />
+        </div>
+        <div className={styles.formGroup}>
+          <label htmlFor="name">Prénom</label>
+          <input type="text" id="surname" name="surname" required />
+        </div>
+        <div className={styles.formGroup}>
+          <label htmlFor="name">Téléphone</label>
+          <input type="tel" id="phone" name="phone" required />
         </div>
         <div className={styles.formGroup}>
           <label htmlFor="email">Email</label>

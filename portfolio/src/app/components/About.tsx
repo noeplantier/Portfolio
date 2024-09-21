@@ -19,7 +19,7 @@ export default function About() {
 
   return (
     <section id="about" className={styles.about}>
-      <h2>À propos de moi</h2>
+      <h1>À propos de moi</h1>
       <p className={styles.typingText} style={{ color: '#fffff'}}>
         {displayedText}
       </p>
