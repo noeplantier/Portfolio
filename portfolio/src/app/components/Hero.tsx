@@ -5,6 +5,7 @@ export default function Hero() {
     <section id="hero" className={styles.hero}>
       
   <div className={styles.background}>
+  
     <img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" alt="React Logo" />
     <img src="https://iconape.com/wp-content/png_logo_vector/nodejs.png" alt="Node.js Logo" />
     <img src="https://cdn.iconscout.com/icon/free/png-256/free-html5-logo-icon-download-in-svg-png-gif-file-formats--html-wordmark-programming-langugae-language-pack-logos-icons-1175209.png" alt="HTML5 Logo" />
@@ -16,17 +17,13 @@ export default function Hero() {
     <img src="https://seeklogo.com/images/P/php-logo-91EFDB12E1-seeklogo.com.png" alt="PHP logo" />
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" alt="Python logo" />
     <img src="https://img.icons8.com/color/512/ruby-programming-language.png" alt="Ruby logo" />
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/.NET_Core_Logo.svg/2048px-.NET_Core_Logo.svg.png" alt="MUI logo" />
-    <img src="https://mui.com/static/logo.png" alt=".NET logo" />
-    <img src="https://static-00.iconduck.com/assets.00/java-icon-2048x2048-yxty4s2p.png" alt="Java logo" />
-    <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Figma-1-logo.png" alt="Figma logo" />
 
-
+  
   </div>
       <div className={styles.content}>
         <h1>Noé Plantier</h1>
         <p>Développeur Web & Web Mobile Full-Stack</p>
-        <a href="#projects" className={styles.cta}>Voir mes projets</a>
+        <a href="#projects" className={styles.button}>Voir mes projets</a>
       </div>
     </section>
   );
