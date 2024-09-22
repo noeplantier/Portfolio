@@ -21,14 +21,13 @@
 }
 
 .button {
-  display: inline-block;
   padding: 0.75rem 2rem;
-  background-color: #ffc229;
-  color: #000;
+  background-color: #001831;
+  color: #ffffff;
   border-radius: 30px;
   transition: background-color 0.3s ease;
   &:hover {
-    background-color: #ff9900;
+    background-color: #026cad;
   }
 }
 

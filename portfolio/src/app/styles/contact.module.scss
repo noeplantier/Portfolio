@@ -5,33 +5,49 @@
   margin-bottom: 8rem;
 
 
+
   h1 {
     font-size: 3.5rem;
     margin-bottom: 6rem;
   }
 
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 6rem;
+  }
+
+
 
 
   form {
-    display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     max-width: 600px;
-    margin: 0 auto;
+    border: 2px solid #298dff;
+    margin-left: 25rem;
+
+
+  
 
     .formGroup {
       width: 100%;
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+
+       
 
       label {
+        text-align: center;
         display: block;
+        margin-bottom: 0.5rem;
         margin-bottom: 0.5rem;
         font-size: 1.1rem;
       }
 
       input, textarea {
-        width: 100%;
-        padding: 0.75rem;
+        width: 70%;
+        padding: 0.8rem;
         border: 1px solid #ddd;
         border-radius: 5px;
         font-size: 1rem;
@@ -41,14 +57,15 @@
     .submitButton {
       font-size: 1rem;
       padding: 1rem 2rem;
-      background-color: #dca418;
+      background-color:  #298dff;
       color: white;
       border: none;
+      margin-bottom: 2rem;
       text-decoration: none;
       border-radius: 5px;
       transition: background-color 0.3s ease;
       &:hover {
-        background-color: #ffc229;
+        background-color: #298dff
       }
     }
     }
