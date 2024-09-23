@@ -3,7 +3,7 @@ import './globals.scss';
 
 export const metadata: Metadata = {
   title: "Noé Plantier - Web & Mobile Developer",
-  description: "Mon site créé avec Next.js",
+  description: "Noé Plantier - Web & Mobile Developer",
 };
 
 export default function RootLayout({
@@ -12,7 +12,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr">
+    <html lang="en">
       <body>
         {children}
       </body>
