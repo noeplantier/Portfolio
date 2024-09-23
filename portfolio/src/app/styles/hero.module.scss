@@ -1,5 +1,5 @@
 .hero {
-  margin-top: 50rem;
+  margin-top: 35rem;
   background-size: cover;
   min-height: 100vh;
   display: flex;
@@ -27,6 +27,7 @@
 
 
 .h1{
+  text-decoration: none;
   text-align: center;
 }
 
@@ -64,17 +65,19 @@
 
 
 
-  img:nth-child(1) { top: 30%; left: 30%; }
-  img:nth-child(2) { top: 10%; right: 70%; }
-  img:nth-child(3) { bottom: 30%; left: 60%; }
+  img:nth-child(1) { top: 10%; left: 30%; right:50%; }
+  img:nth-child(2) { top: 10%; right: 80%; }
+  img:nth-child(3) { bottom: 30%; left: 71%; }
   img:nth-child(4) { bottom: 10%; right: 70%; }
   img:nth-child(5) { bottom: 50%; left: 10%; }
-  img:nth-child(6) { bottom: 50%; right: 30%; }
-  img:nth-child(7) { bottom: 70%; left: 80%; }
-  img:nth-child(8) { bottom: 10%; right: 30%; }
-  img:nth-child(9) { bottom: 80%; left: 50%; }
-  img:nth-child(10) { bottom: 40%; right: 10%; }
-  img:nth-child(11) { bottom: 30%; left: 10%; }
+  img:nth-child(6) { bottom: 60%; right: 20%; }
+  img:nth-child(7) { bottom: 70%; left: 90%; }
+  img:nth-child(8) { bottom: 10%; right: 10%; }
+  img:nth-child(9) { bottom: 80%; left: 65%; }
+  img:nth-child(10) { bottom: 40%; right: 5%; }
+  img:nth-child(11) { bottom: 30%; left: 20%; top:50%; }
+  img:nth-child(12) { bottom: 30%; left: 5%; top:70%; }
+
  
 
 
