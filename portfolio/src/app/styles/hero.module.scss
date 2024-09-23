@@ -1,10 +1,30 @@
 .hero {
+  margin-top: 50rem;
   background-size: cover;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+
+  .hero-background {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+
+    .hero-image {
+      margin-top: 10rem;
+      width: 80vh;
+      height: auto;
+      border-radius: 50%;
+      border: 2px solid #ffffff;
+      object-fit: cover;
+    }
+  }
+
 
 .h1{
   text-align: center;

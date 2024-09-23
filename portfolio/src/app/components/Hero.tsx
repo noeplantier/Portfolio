@@ -21,6 +21,9 @@ export default function Hero() {
   
   </div>
       <div className={styles.content}>
+      <div className="hero-background">
+        <img src="/images/CV-PIC.png" alt="Noé Plantier" className="hero-image" />
+      </div>
         <h1>Noé Plantier</h1>
         <p>Développeur Web & Web Mobile Full-Stack</p>
         <a href="#projects" className={styles.button}>Voir mes projets</a>

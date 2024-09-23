@@ -10,6 +10,18 @@
     margin-bottom: 6rem;
   }
 
+  h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+    color: #555;
+  }
+
+  
 
   .skillList {
     display: flex;
@@ -31,16 +43,7 @@
         transform: translateY(-5px);
       }
 
-      h3 {
-        font-size: 1.5rem;
-        color: #333;
-        margin-bottom: 0.5rem;
-      }
-
-      p {
-        font-size: 1rem;
-        color: #555;
-      }
+    
     }
   }
 }
