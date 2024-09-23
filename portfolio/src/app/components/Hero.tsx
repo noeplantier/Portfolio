@@ -7,10 +7,10 @@ export default function Hero() {
   <div className={styles.background}>
   
     <img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" alt="React Logo" />
-    <img src="https://iconape.com/wp-content/png_logo_vector/nodejs.png" alt="Node.js Logo" />
+    <img src="https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png" alt="Node.js Logo" />
     <img src="https://cdn.iconscout.com/icon/free/png-256/free-html5-logo-icon-download-in-svg-png-gif-file-formats--html-wordmark-programming-langugae-language-pack-logos-icons-1175209.png" alt="HTML5 Logo" />
     <img src="https://cdn.iconscout.com/icon/free/png-256/free-css3-logo-icon-download-in-svg-png-gif-file-formats--css-wordmark-programming-langugae-language-pack-logos-icons-1175238.png" alt="CSS3 Logo" />
-    <img src="https://static.vecteezy.com/system/resources/previews/027/127/560/original/javascript-logo-javascript-icon-transparent-free-png.png" alt="JavaScript Logo" />
+    <img src="https://freesvg.org/img/1486641506.png" alt="JavaScript Logo" />
     <img src="https://www.svgrepo.com/show/361653/vercel-logo.svg" alt="Vercel" />
     <img src="https://iconape.com/wp-content/png_logo_vector/flutter-logo.png" alt="Flutter Logo" />
     <img src="https://icons.veryicon.com/png/o/business/vscode-program-item-icon/typescript.png"  alt="TypeScript Logo" />
@@ -30,6 +30,7 @@ export default function Hero() {
         <h1>Noé Plantier</h1>
         <p>Développeur Web & Web Mobile Full-Stack</p>
         <a href="#projects" className={styles.button}>Voir mes projets</a>
+
       </div>
     </section>
   );

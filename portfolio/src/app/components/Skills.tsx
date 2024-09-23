@@ -14,8 +14,8 @@ export default function Skills() {
 
   return (
     <section id="skills" className={styles.skills}>
-      <h1>Mes Compétences</h1>
-      <h2>Je maitrise plusieurs langages, frameworks et bibliothèques indispensables..</h2>
+      <h1>My Skills</h1>
+      <h2>Some of the technologies and tools I am proficient in :</h2>
       <div className={styles.skillList}>
         {skills.map((skill, index) => (
           <div key={index} className={styles.skillCard}>

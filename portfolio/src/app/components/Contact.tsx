@@ -1,11 +1,26 @@
+import { useEffect, useState } from 'react';
 import styles from '../styles/contact.module.scss';
 
 export default function Contact() {
+  const [displayedText, setDisplayedText] = useState('');
+  const fullText = 'If you\'d like to discuss a project or have any questions, feel free to reach out to me through the following methods :'
+
+  useEffect(() => {
+    let index = 0;
+    const typingInterval = setInterval(() => {
+      setDisplayedText((prev) => prev + fullText[index]);
+      index++;
+      if (index === fullText.length) clearInterval(typingInterval);
+    }, 70); 
+    return () => clearInterval(typingInterval);
+  }, []);
+
   return (
     <section id="contact" className={styles.contact}>
-      <h1>Contactez-moi</h1>
-      <h2>Contactez-moi pour tout projet professionel ou personnel :</h2>
-
+      <h1>Contact Me</h1>
+      <h2 className={styles.typingText} style={{ color: '#fffff'}}>
+        {displayedText}
+      </h2>
       <form>
         <div className={styles.formGroup}>
           <label htmlFor="name">Nom</label>
@@ -32,3 +47,7 @@ export default function Contact() {
     </section>
   );
 }
+function setDisplayedText(arg0: (prev: any) => any) {
+  throw new Error('Function not implemented.');
+}
+

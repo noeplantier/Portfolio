@@ -1,17 +1,34 @@
 import Image from 'next/image';
 import styles from '../styles/projects.module.scss';
+import { useEffect, useState } from 'react';
 
 export default function Projects() {
+  const [displayedText, setDisplayedText] = useState('');
+  const fullText = 'Here are some of the projects I have worked on. Each one represents a unique challenge and learning experience in the world of web development.'
+
   const projects = [
     { title: 'O\'Party', description: 'Website événementiel permettant aux utilisateurs de découvrir de nouveaux horizons', image: '/images/oparty.jpeg', technologies: ['React', 'Next.js', 'SCSS', 'Node.js'] },
     { title: 'TECUM', description: 'Website officiel de la bijouterie TECUM', image: '/images/tecum.jpeg', technologies: ['TypeScript', 'SCSS', 'React', 'Node.js'] },
     { title: 'L\'immobilière de Julia', description: 'Website de l\'agence immobilière bretonne "L\'immobilière de Julia"', image: '/images/immo.jpeg', technologies: ['React', 'SCSS', 'MUI', 'Node.js'] }
   ];
+  
+  useEffect(() => {
+    let index = 0;
+    const typingInterval = setInterval(() => {
+      setDisplayedText((prev) => prev + fullText[index]);
+      index++;
+      if (index === fullText.length) clearInterval(typingInterval);
+    }, 70); 
+    return () => clearInterval(typingInterval);
+  }, []);
+
 
   return (
     <section id="projects" className={styles.projects}>
-      <h1>Mes Projets</h1>
-      <h2>Quelques projets professionnels, créés pour des entreprises mais aussi pour le plaisir !</h2>
+      <h1>My Own Projects</h1>
+      <h2 className={styles.typingText} style={{ color: '#fffff'}}>
+        {displayedText}
+      </h2>
       <div className={styles.projectList}>
         {projects.map((project, index) => (
           <div key={index} className={styles.projectCard}>

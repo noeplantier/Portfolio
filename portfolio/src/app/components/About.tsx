@@ -5,7 +5,7 @@ import styles from '../styles/about.module.scss';
 
 export default function About() {
   const [displayedText, setDisplayedText] = useState('');
-  const fullText = 'Ennchanté ! Noé, développeur web full-stack avec une passion pour la création d\'expériences web et mobiles. Après une formation intense à l\'École O\'Clock. J\'ai acquis une solide expérience en React, Node.js, SCSS, TypeScript. Basé à Bordeaux, je suis fasciné par l\'innovation et l\'élégance dans le code.'
+  const fullText = 'I\'m a Fullstack Web and Mobile Developer with a background in UI/UX design and a passion for building interactive, user-friendly websites and applications. I have experience with technologies like React, Next.js, and Node.js, and I always strive to stay up-to-date with the latest industry trends.'
 
   useEffect(() => {
     let index = 0;
@@ -19,10 +19,12 @@ export default function About() {
 
   return (
     <section id="about" className={styles.about}>
-      <h1>À propos de moi</h1>
-      <p className={styles.typingText} style={{ color: '#fffff'}}>
+            
+      <h1>What about me ?</h1>
+      <h2 className={styles.typingText} style={{ color: '#fffff'}}>
         {displayedText}
-      </p>
+      </h2>
+      <img src="/images/codingplanet.png" alt="Noé Plantier" className="logo-image" />
     </section>
   );
 }

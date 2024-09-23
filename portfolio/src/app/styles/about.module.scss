@@ -4,6 +4,12 @@
   margin-bottom: 8rem;
   animation: fadeIn 2s ease-in-out;
 
+  .logo-image{
+  justify-content: left;
+
+
+  }
+
   h1 {
     font-size: 3.5rem;
     margin-bottom: 6rem;
@@ -14,13 +20,13 @@
     }
   }
 
-  p {
-    font-weight: 900;
-    font-size: 1.25rem;
-    max-width: 800px;
-    margin: 0 auto;
-    opacity: 0.8;
+  h2 {
+    position: relative;
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 5rem;
   }
+  
 }
 
 @keyframes fadeIn {
