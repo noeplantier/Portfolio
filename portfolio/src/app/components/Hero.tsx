@@ -27,14 +27,16 @@ export default function Hero() {
       <div className="hero-background">
         <img src="/images/CV-PIC.png" alt="Noé Plantier" className="hero-image" />
       </div>
+        <section className='hero-section'>
         <h1>Noé Plantier</h1>
-        <p>Développeur Web & Web Mobile Full-Stack</p>
+        <h2>Développeur Web & Web Mobile Full-Stack</h2>
         <a href="#projects" className={styles.button}>My Projects</a>
         <div className='code-screenshots' alt='code-screenshots'>
-        <img src="/images/fullstack.png" alt="Noé Plantier" className="hero-image" />
-        <img src="/images/backend.png" alt="Noé Plantier" className="hero-image" />
-        <img src="/images/frontend.png" alt="Noé Plantier" className="hero-image" />
+        <img src="/images/fullstack.png" alt="Noé Plantier" className="fullstack-image" />
+        <img src="/images/backend.png" alt="Noé Plantier" className="backend-image" />
+        <img src="/images/frontend.png" alt="Noé Plantier" className="frontend-image" />
         </div>
+        </section>
       </div>
     </section>
   );
