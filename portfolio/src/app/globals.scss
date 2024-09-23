@@ -14,12 +14,12 @@ body {
 h1 {
   position: relative;
   display: inline-block;
-  overflow: hidden; /* Cache le texte pour l'effet de frappe */
-  white-space: nowrap; /* Empêche le texte de passer à la ligne */
-  border-right: 2px solid; /* Simule la barre verticale (caret) */
+  overflow: hidden; 
+  white-space: nowrap; 
+  border-right: 2px solid; 
   font-size: 3.5rem;
   margin-bottom: 1rem;
-  width: fit-content; /* S'ajuste à la largeur du texte */
+  width: fit-content;
   animation: typing 4s steps(var(--num-characters), end), blink 0.75s step-end infinite;
   color: #298dff;
 }
@@ -27,7 +27,7 @@ h1 {
 
 
 
-/* Animation pour faire clignoter la barre verticale (caret) */
+
 @keyframes blink {
   0% {
     border-color: #298dff;
@@ -47,13 +47,12 @@ h2 {
   margin-bottom: 5rem;
 }
 
-/* Dynamically calculate the steps based on the number of characters */
+
 h1::after {
-  content: ''; /* Ajouter un contenu vide qui sert de curseur */
+  content: ''; 
   animation: blink 1s step-end infinite;
 }
 
-/* Import your styles */
 @import './styles/header.module.scss';
 @import './styles/navbar.module.scss';
 @import './styles/hero.module.scss';
