@@ -34,9 +34,9 @@
   margin-bottom: 2rem;
 
   .techLogo {
-    width: 80px;
-    height: 80px;
-    margin: 0 1rem;
+    margin: 1rem;
+    width: 90px;
+    height: 90px;
   }
 }
 
@@ -56,11 +56,13 @@
 
 .codeScreenshotsSection {
   margin-top: 2rem;
+  gap: 3rem;
 
   .code-screenshots {
     display:inline-block;
     justify-content: center;
     gap: 3rem;
+    margin-bottom: 3rem;
 
     .image-container {
       width: 1200px;
@@ -76,6 +78,7 @@
         border-radius: 15px;
         transition: transform 0.001s ease-in-out;
         backface-visibility: hidden;
+
       }
 
       .front {
