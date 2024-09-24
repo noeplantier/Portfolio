@@ -24,33 +24,17 @@
     border-radius: 100%;
     border: 2px solid #ffffff;
     object-fit: cover;
-  
   }
-&:hover {
-  transform: scale(1.5);
-  filter: brightness(200%);
-}
+
+  &:hover {
+    transform: scale(1.5);
+    filter: brightness(200%);
+  }
 }
 
-.hero-section{
-
+.hero-section {
   margin-top: 50rem;
   margin-bottom: 10rem;
-
-
-}
-
-.h1 {
-  margin-top: 2rem;
-  margin-bottom: 5rem;
-  text-decoration: none;
-  text-align: center;
-  font-size: 7rem;
-}
-
-.hero p {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
 }
 
 .button {
@@ -61,65 +45,59 @@
   border-radius: 30px;
   display: inline-block;
   margin-top: -5rem;
+
   &:hover {
     background-color: #026cad;
   }
 }
 
-.background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-
-  img {
-    position: absolute;
-    width: 100px;
-    animation: infinite;
-    animation: float 3s ease-in-out infinite;
-    transform: scale(1.5);
-    transition: all 0.3s ease-in-out;
-    &:hover {
-      transform: scale(1.5);
-      filter: brightness(200%);
-    }
-  }
-
-  img:nth-child(1) { bottom: 82%;right: 70%; }
-  img:nth-child(2) { bottom: 86%; right: 80%; }
-  img:nth-child(3) { bottom: 85%; left: 71%; }
-  img:nth-child(4) { bottom: 90%; right: 70%; }
-  img:nth-child(5) { bottom: 82%; left: 5%; }
-  img:nth-child(6) { bottom: 91%; right: 15%; }
-  img:nth-child(7) { bottom: 95%; left: 90%; }
-  img:nth-child(8) { bottom: 87%; right: 5%; }
-  img:nth-child(9) { bottom: 95%; left: 65%; }
-  img:nth-child(10) { bottom: 81%; right: 5%; }
-  img:nth-child(11) { bottom: 95%; left: 20%; }
-  img:nth-child(12) { bottom: 92%; left: 5%;  }
-
-  @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    30% { transform: translateY(-10px); }
-  }
+.code-screenshots {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 10rem;
 }
 
-.backend-image, .frontend-image, .fullstack-image{
-  margin-top: 10rem;
-  display:flex;
-  justify-content: center;
-  gap: 0.5rem;
-    width: 1000px;
-    height: 600px;
-    transition: all 0.5s ease-in-out;
-    border: 2px solid #fff;
-    border-radius: 15px;
+.image-container {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+  transition: all 0.5s ease-in-out;
 
-    &:hover {
-      transform: scale(1.5);
-      filter: brightness(200%);
-    }
+  &:hover .front {
+    transform: rotateY(180deg);
   }
 
+  &:hover .back {
+    transform: rotateY(360deg);
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
+    backface-visibility: hidden;
+  }
+
+  .front {
+    transform: rotateY(0deg);
+  }
+
+  .back {
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &.flipped .front {
+    transform: rotateY(180deg);
+  }
+
+  &.flipped .back {
+    transform: rotateY(0deg);
+  }
+}
