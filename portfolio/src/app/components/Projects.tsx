@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 
 export default function Projects() {
   const [displayedText, setDisplayedText] = useState('');
-  const fullText = 'Here are some of the projects I have worked on. Each one represents a unique challenge and learning experience in the world of web development.'
+  const fullText = "Heere are some of the projects I have worked on. Each one represents a unique challenge and learning experience in the world of web development."
 
   const projects = [
     { title: 'O\'Party', description: 'Website événementiel permettant aux utilisateurs de découvrir de nouveaux horizons', image: '/images/oparty.jpeg', technologies: ['React', 'Next.js', 'SCSS', 'Node.js'] },
@@ -12,17 +12,19 @@ export default function Projects() {
     { title: 'L\'immobilière de Julia', description: 'Website de l\'agence immobilière bretonne "L\'immobilière de Julia"', image: '/images/immo.jpeg', technologies: ['React', 'SCSS', 'MUI', 'Node.js'] }
   ];
   
+
   useEffect(() => {
     let index = 0;
     const typingInterval = setInterval(() => {
-      setDisplayedText((prev) => prev + fullText[index]);
-      index++;
-      if (index === fullText.length) clearInterval(typingInterval);
-    }, 70); 
+      if (index < fullText.length) {
+        setDisplayedText((prev) => prev + fullText.charAt(index)); // Utilisation de charAt pour un accès sécurisé
+        index++;
+      } else {
+        clearInterval(typingInterval);
+      }
+    }, 70);
     return () => clearInterval(typingInterval);
   }, []);
-
-
   return (
     <section id="projects" className={styles.projects}>
       <h1>My Own Projects</h1>

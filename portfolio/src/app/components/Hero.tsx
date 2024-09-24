@@ -1,7 +1,25 @@
+import { useEffect, useState } from 'react';
 import styles from '../styles/hero.module.scss';
 
+
 export default function Hero() {
+
+  const [displayedText, setDisplayedText] = useState('');
+  const fullText = "Fuull-Stack Web & Web Mobile Developer"
+  useEffect(() => {
+    let index = 0;
+    const typingInterval = setInterval(() => {
+      if (index < fullText.length) {
+        setDisplayedText((prev) => prev + fullText.charAt(index)); // Utilisation de charAt pour un accès sécurisé
+        index++;
+      } else {
+        clearInterval(typingInterval);
+      }
+    }, 70);
+    return () => clearInterval(typingInterval);
+  }, []);
   return (
+
     <section id="hero" className={styles.hero}>
       
   <div className={styles.background}>
@@ -29,9 +47,11 @@ export default function Hero() {
       </div>
         <section className='hero-section'>
         <h1>Noé Plantier</h1>
-        <h2>Développeur Web & Web Mobile Full-Stack</h2>
+        <h2 className={styles.typingText} style={{ color: '#fffff'}}>
+        {displayedText}
+      </h2>
         <a href="#projects" className={styles.button}>My Projects</a>
-        <div className='code-screenshots' alt='code-screenshots'>
+        <div className='code-screenshots' id='code-screenshots'>
         <img src="/images/fullstack.png" alt="Noé Plantier" className="fullstack-image" />
         <img src="/images/backend.png" alt="Noé Plantier" className="backend-image" />
         <img src="/images/frontend.png" alt="Noé Plantier" className="frontend-image" />

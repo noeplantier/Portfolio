@@ -3,18 +3,20 @@ import styles from '../styles/contact.module.scss';
 
 export default function Contact() {
   const [displayedText, setDisplayedText] = useState('');
-  const fullText = 'If you\'d like to discuss a project or have any questions, feel free to reach out to me through the following methods :'
+  const fullText = "If you\'d like to discuss a project or have any questions, feel free to reach out to me through the following methods :"
 
-  useEffect(() => {
-    let index = 0;
-    const typingInterval = setInterval(() => {
-      setDisplayedText((prev) => prev + fullText[index]);
-      index++;
-      if (index === fullText.length) clearInterval(typingInterval);
-    }, 70); 
-    return () => clearInterval(typingInterval);
-  }, []);
-
+    useEffect(() => {
+      let index = 0;
+      const typingInterval = setInterval(() => {
+        if (index < fullText.length) {
+          setDisplayedText((prev) => prev + fullText.charAt(index)); // Utilisation de charAt pour un accès sécurisé
+          index++;
+        } else {
+          clearInterval(typingInterval);
+        }
+      }, 70);
+      return () => clearInterval(typingInterval);
+    }, []);
   return (
     <section id="contact" className={styles.contact}>
       <h1>Contact Me</h1>

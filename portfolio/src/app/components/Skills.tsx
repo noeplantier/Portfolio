@@ -1,6 +1,10 @@
+import { useEffect, useState } from 'react';
 import styles from '../styles/skills.module.scss';
 
 export default function Skills() {
+  const [displayedText, setDisplayedText] = useState('');
+  const fullText = "Soome of the technologies and tools I am proficient in :"
+
   const skills = [
     { name: 'HTML5', level: 'Avancé' },
     { name: 'JavaScript', level: 'Avancé' },
@@ -12,10 +16,26 @@ export default function Skills() {
     { name: 'PHP', level: 'Débutant' },
   ];
 
+
+  useEffect(() => {
+    let index = 0;
+    const typingInterval = setInterval(() => {
+      if (index < fullText.length) {
+        setDisplayedText((prev) => prev + fullText.charAt(index)); // Utilisation de charAt pour un accès sécurisé
+        index++;
+      } else {
+        clearInterval(typingInterval);
+      }
+    }, 70);
+    return () => clearInterval(typingInterval);
+  }, []);
+
   return (
     <section id="skills" className={styles.skills}>
       <h1>My Skills</h1>
-      <h2>Some of the technologies and tools I am proficient in :</h2>
+      <h2 className={styles.typingText} style={{ color: '#fffff'}}>
+        {displayedText}
+      </h2>
       <div className={styles.skillList}>
         {skills.map((skill, index) => (
           <div key={index} className={styles.skillCard}>
