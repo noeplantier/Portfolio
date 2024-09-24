@@ -12,11 +12,14 @@
 
 .headerText {
   margin-bottom: 2rem;
+  margin-top: 2.5rem;
+
   
   h1 {
     font-size: 3rem;
-    color: #ffffff;
+    color:#298dff;   
     margin-bottom: 1rem;
+    
   }
 
   h2 {
@@ -42,8 +45,9 @@
   margin-top: 1rem;
 
   .heroImage {
-    width: 280px;
-    height: 280px;
+    margin-top: -7rem;
+    width: 500px;
+    height: 500px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #ffffff;
@@ -54,14 +58,15 @@
   margin-top: 2rem;
 
   .code-screenshots {
-    display: flex;
+    display:inline-block;
     justify-content: center;
-    gap: 2rem;
+    gap: 3rem;
 
     .image-container {
-      width: 300px;
-      height: 200px;
+      width: 1200px;
+      height: 700px;
       perspective: 1000px;
+      display: flex;
       position: relative;
 
       img {
@@ -69,7 +74,7 @@
         height: 100%;
         border: 2px solid #fff;
         border-radius: 15px;
-        transition: transform 0.5s ease-in-out;
+        transition: transform 0.001s ease-in-out;
         backface-visibility: hidden;
       }
 
@@ -78,14 +83,14 @@
       }
 
       .back {
-        transform: rotateY(180deg);
+        transform: rotateY(45deg);
         position: absolute;
         top: 0;
         left: 0;
       }
 
       &:hover .front {
-        transform: rotateY(180deg);
+        transform: rotateY(360deg);
       }
 
       &:hover .back {
@@ -97,7 +102,7 @@
 
 .typingText {
   font-size: 2rem;
-  color: #ffffff;
+  color: #298dff;   
   animation: typing 4s steps(40, end), blink 0.75s step-end infinite;
   white-space: nowrap;
   overflow: hidden;

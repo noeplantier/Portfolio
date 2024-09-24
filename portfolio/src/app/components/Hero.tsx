@@ -40,14 +40,22 @@ export default function Hero() {
 
   return (
     <section id="hero" className={styles.hero}>
-      {/* Titres H1 et H2 placés au-dessus de l'image */}
       <div className={styles.headerText}>
         <h1>Noé Plantier</h1>
         <h2 className={styles.typingText}>{displayedText}</h2>
       </div>
 
+
+
+      <div className={styles.heroImageContainer}>
+        <img
+          src="/images/CV-PIC.png"
+          alt="Noé Plantier"
+          className={styles.heroImage}
+        />
+      </div>
       <div className={styles.background}>
-        {/* Remettre les logos des technologies */}
+    
         <img
           src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"
           alt="React Logo"
@@ -58,17 +66,7 @@ export default function Hero() {
           alt="Node.js Logo"
           className={styles.techLogo}
         />
-        {/* Ajouter d'autres logos si nécessaire */}
       </div>
-
-      <div className={styles.heroImageContainer}>
-        <img
-          src="/images/CV-PIC.png"
-          alt="Noé Plantier"
-          className={styles.heroImage}
-        />
-      </div>
-
       <section className={styles.codeScreenshotsSection}>
         <div className={styles['code-screenshots']}>
           <div
