@@ -11,7 +11,7 @@ export default function Hero() {
     <img src="https://cdn.iconscout.com/icon/free/png-256/free-html5-logo-icon-download-in-svg-png-gif-file-formats--html-wordmark-programming-langugae-language-pack-logos-icons-1175209.png" alt="HTML5 Logo" />
     <img src="https://cdn.iconscout.com/icon/free/png-256/free-css3-logo-icon-download-in-svg-png-gif-file-formats--css-wordmark-programming-langugae-language-pack-logos-icons-1175238.png" alt="CSS3 Logo" />
     <img src="https://freesvg.org/img/1486641506.png" alt="JavaScript Logo" />
-    <img src="https://www.svgrepo.com/show/361653/vercel-logo.svg" alt="Vercel" />
+    <img src="https://icon-library.com/images/rust-icon/rust-icon-10.jpg" alt="Rust Logo" />
     <img src="https://iconape.com/wp-content/png_logo_vector/flutter-logo.png" alt="Flutter Logo" />
     <img src="https://icons.veryicon.com/png/o/business/vscode-program-item-icon/typescript.png"  alt="TypeScript Logo" />
     <img src="https://seeklogo.com/images/P/php-logo-91EFDB12E1-seeklogo.com.png" alt="PHP logo" />
