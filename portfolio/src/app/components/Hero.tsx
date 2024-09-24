@@ -52,9 +52,9 @@ export default function Hero() {
       </h2>
         <a href="#projects" className={styles.button}>My Projects</a>
         <div className='code-screenshots' id='code-screenshots'>
-        <img src="/images/fullstack.png" alt="Noé Plantier" className="fullstack-image" />
-        <img src="/images/backend.png" alt="Noé Plantier" className="backend-image" />
-        <img src="/images/frontend.png" alt="Noé Plantier" className="frontend-image" />
+        <img src="/images/oparty.jpeg" alt="Noé Plantier" className="fullstack-image" />
+        <img src="/images/immo.jpeg" alt="Noé Plantier" className="backend-image" />
+        <img src="/images/tecum.jpeg" alt="Noé Plantier" className="frontend-image" />
         </div>
         </section>
       </div>
