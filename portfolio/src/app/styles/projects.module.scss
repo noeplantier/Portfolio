@@ -20,32 +20,35 @@
       justify-content: center;
       flex-wrap: wrap;
       gap: 10px;
-      margin-top: 10px;
+      
     }
     
     .techTag {
+      margin-top: 2rem;
       padding: 5px 10px;
       background-color: #ffffff;
       color:#0e2a47;
       border-radius: 4px;
-      font-size: 12px;
+      font-size: 1rem;
       font-weight: bold;
-      border: 1px solid #ffffff;
+      border: 1px solid #0e2a47;
+
     }
 
     .projectCard {
-  
-      border: 3px solid   #298dff;   
+      color:#0e2a47;
+      background-color: #fff;
       border-radius: 8px;
+      border: 3px solid   #298dff;   
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       padding: 1.5rem;
       text-align: center;
       width: 20rem;
       height: 28rem;
-      transition: transform 0.3s ease-in-out;
+      transition: transform 0.1s ease-in-out;
 
       &:hover {
-        transform: translateY(-5px);
+        transform: translateY(-10px);
       }
 
       img {

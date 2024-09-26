@@ -8,7 +8,7 @@ export default function Projects() {
 
   const projects = [
     { title: 'O\'Party', description: 'Website événementiel permettant aux utilisateurs de découvrir de nouveaux horizons', image: '/images/oparty.jpeg', technologies: ['React', 'Next.js', 'SCSS', 'Node.js'] },
-    { title: 'TECUM', description: 'Website officiel de la bijouterie TECUM', image: '/images/tecum.jpeg', technologies: ['TypeScript', 'SCSS', 'React', 'Node.js'] },
+    { title: 'TECUM', description: 'Website officiel de la bijouterie TECUM', image: '/images/tecum.jpeg', technologies: ['TS', 'SCSS', 'React', 'Node.js'] },
     { title: 'L\'immobilière de Julia', description: 'Website de l\'agence immobilière bretonne "L\'immobilière de Julia"', image: '/images/immo.jpeg', technologies: ['React', 'SCSS', 'MUI', 'Node.js'] }
   ];
   
