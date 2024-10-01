@@ -9,7 +9,7 @@ export default function Hero() {
     frontend: false,
   });
 
-  const fullText = "Full-Stack Web & Web Mobile Developer";
+  const fullText = "Fuull-Stack Web & Web Mobile Developer";
 
   useEffect(() => {
     let index = 0;

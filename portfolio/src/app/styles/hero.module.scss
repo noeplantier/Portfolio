@@ -16,15 +16,17 @@
 
   
   h1 {
-    font-size: 3rem;
+    font-size: 5rem;
     color:#298dff;   
     margin-bottom: 1rem;
+    cursor: pointer;
     
   }
 
   h2 {
     font-size: 2rem;
     color: #ffffff;
+    cursor: default;
   }
 }
 
@@ -107,10 +109,9 @@
 .typingText {
   font-size: 2rem;
   color: #298dff;   
-  animation: typing 4s steps(40, end), blink 0.75s step-end infinite;
+  animation: typing 1s steps(1, end);
   white-space: nowrap;
   overflow: hidden;
-  border-right: 2px solid;
 
   @keyframes typing {
     from {
@@ -118,15 +119,6 @@
     }
     to {
       width: 100%;
-    }
-  }
-
-  @keyframes blink {
-    from, to {
-      border-color: transparent;
-    }
-    50% {
-      border-color: white;
     }
   }
 }
