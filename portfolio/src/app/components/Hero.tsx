@@ -90,8 +90,8 @@ export default function Hero() {
   
 
     <img 
-    src="https://iconape.com/wp-content/png_logo_vector/flutter-logo.png" 
-    alt="Flutter Logo" 
+    src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/nextjs-icon.png" 
+    alt="Next Logo" 
     className={styles.techLogo}
     />
 
@@ -105,11 +105,7 @@ export default function Hero() {
     alt="Python logo" 
     className={styles.techLogo}
     />
-    <img 
-    src="https://img.icons8.com/color/512/ruby-programming-language.png" 
-    alt="Ruby logo" 
-    className={styles.techLogo}
-    />
+  
     <img 
     src="https://img.icons8.com/color/512/sass-avatar.png" 
     alt="SASS logo" 
