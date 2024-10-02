@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from 'react';
 import styles from '../styles/about.module.scss';
+import Image from 'next/image';
+
 
 export default function About() {
   const [displayedText, setDisplayedText] = useState('');
@@ -26,7 +28,8 @@ export default function About() {
       <h2 className={styles.typingText} style={{ color: '#fff' }}>
         {displayedText}
       </h2>
-      <img src="/images/codingplanet.png" alt="Noé Plantier" className="logo-image" />
+      <Image src="/images/codingplanet.png" alt="Noé Plantier" className="logo-image"      width={200}
+          height={200} />
     </section>
   );
 }

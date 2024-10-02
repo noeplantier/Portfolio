@@ -13,7 +13,8 @@ export default function Home() {
   useEffect(() => {
     const headings = document.querySelectorAll('h1');
     headings.forEach((heading) => {
-      const textLength = heading.textContent.length;
+      const textContent = heading.textContent || ''; // Vérifie si le texte existe, sinon valeur par défaut vide
+      const textLength = textContent.length;
       heading.style.setProperty('--num-characters', textLength.toString());
     });
   }, []);
@@ -26,8 +27,7 @@ export default function Home() {
       <Projects />
       <Skills />
       <Contact />
-      <Footer/>
-
+      <Footer />
     </>
   );
 }
