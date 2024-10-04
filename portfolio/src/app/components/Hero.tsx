@@ -10,7 +10,7 @@ export default function Hero() {
     frontend: false,
   });
 
-  const fullText = "Full-Stack Web & Web Mobile Developer";
+  const fullText = "Fuull-Stack Web & Mobile Developer";
 
   useEffect(() => {
     let index = 0;
@@ -51,8 +51,8 @@ export default function Hero() {
           src="/images/CV-PIC.png"
           alt="Noé Plantier"
           className={styles.heroImage}
-          width={600} // width ajustée
-          height={600} // height ajustée
+          width={500} 
+          height={500} 
         />
       </div>
 
@@ -68,68 +68,72 @@ export default function Hero() {
           src="https://cdn.iconscout.com/icon/free/png-256/free-css3-logo-icon-download-in-svg-png-gif-file-formats--css-wordmark-programming-langugae-language-pack-logos-icons-1175238.png"
           alt="CSS3 Logo"
           className={styles.techLogo}
-          width={80}
-          height={80}
+          width={100}
+          height={100}
         />
         <Image
           src="https://freesvg.org/img/1486641506.png"
           alt="JavaScript Logo"
           className={styles.techLogo}
-          width={80}
-          height={80}
+          width={100}
+          height={100}
         />
         <Image
           src="https://icons.veryicon.com/png/o/business/vscode-program-item-icon/typescript.png"
           alt="TypeScript Logo"
           className={styles.techLogo}
-          width={80}
-          height={80}
+          width={100}
+          height={100}
         />
         <Image
           src="https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png"
           alt="Node.js Logo"
           className={styles.techLogo}
-          width={80}
-          height={80}
+          width={100}
+          height={100}
         />
         <Image
           src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"
           alt="React Logo"
           className={styles.techLogo}
-          width={80}
-          height={80}
+          width={100}
+          height={100}
         />
         <Image
           src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/nextjs-icon.png"
           alt="Next.js Logo"
           className={styles.techLogo}
-          width={80}
-          height={80}
+          width={100}
+          height={100}
         />
         <Image
           src="https://seeklogo.com/images/P/php-logo-91EFDB12E1-seeklogo.com.png"
           alt="PHP Logo"
           className={styles.techLogo}
-          width={80}
-          height={80}
+          width={100}
+          height={100}
         />
         <Image
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png"
           alt="Python Logo"
           className={styles.techLogo}
-          width={80}
-          height={80}
+          width={100}
+          height={100}
         />
         <Image
           src="https://img.icons8.com/color/512/sass-avatar.png"
           alt="SASS Logo"
           className={styles.techLogo}
-          width={80}
-          height={80}
+          width={100}
+          height={100}
         />
       </div>
 
       <section className={styles.codeScreenshotsSection}>
+      <div className={styles.headerText}>
+        <h1>A few screenshots of my work</h1>
+        <h2 className={styles.typingText}>Have a look on several screens of my recents projetcs, under this h2 you can see the fast transition between my VSCode screen and the navigator</h2>
+      </div>
         <div className={styles['code-screenshots']}>
           <div
             className={`${styles['image-container']} ${
@@ -148,8 +152,8 @@ export default function Hero() {
               className={`${styles['fullstack-image']} ${
                 flipped.fullstack ? styles.back : styles.front
               }`}
-              width={400} // width ajustée
-              height={300} // height ajustée
+              width={1300} // width ajustée
+              height={1300} // height ajustée
             />
           </div>
 
@@ -168,8 +172,8 @@ export default function Hero() {
               className={`${styles['backend-image']} ${
                 flipped.backend ? styles.back : styles.front
               }`}
-              width={400} // width ajustée
-              height={300} // height ajustée
+              width={1300} 
+              height={1300} 
             />
           </div>
 
@@ -188,8 +192,8 @@ export default function Hero() {
               className={`${styles['frontend-image']} ${
                 flipped.frontend ? styles.back : styles.front
               }`}
-              width={400} // width ajustée
-              height={300} // height ajustée
+              width={1300} // width ajustée
+              height={1300} // height ajustée
             />
           </div>
         </div>

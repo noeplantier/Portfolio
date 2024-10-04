@@ -28,8 +28,8 @@ export default function About() {
       <h2 className={styles.typingText} style={{ color: '#fff' }}>
         {displayedText}
       </h2>
-      <Image src="/images/codingplanet.png" alt="Noé Plantier" className="logo-image"      width={200}
-          height={200} />
+      <Image src="/images/codingplanet.png" alt="Noé Plantier" className="logo-image"      width={1300}
+          height={1300} />
     </section>
   );
 }
