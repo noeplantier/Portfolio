@@ -8,7 +8,7 @@ export default function Loader() {
       setProgress((prevProgress) =>
         prevProgress < 100 ? prevProgress + 1 : 100
       );
-    }, 30); // Vitesse du chargement
+    }, 20); // Vitesse du chargement
 
     return () => clearInterval(interval);
   }, []);

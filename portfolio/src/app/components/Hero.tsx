@@ -132,7 +132,7 @@ export default function Hero() {
       <section className={styles.codeScreenshotsSection}>
       <div className={styles.headerText}>
         <h1>A few screenshots of my work</h1>
-        <h2 className={styles.typingText}>Have a look on several screens of my recents projetcs, under this h2 you can see the fast transition between my VSCode screen and the navigator</h2>
+        <h2 className={styles.typingText}>Have a look on several screens of my recents projects, under this h2 you can see the fast transition between my VSCode screen and the navigator</h2>
       </div>
         <div className={styles['code-screenshots']}>
           <div

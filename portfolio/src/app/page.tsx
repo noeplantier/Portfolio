@@ -9,12 +9,13 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import MapWithMarkers from './components/MapWithMarkers';
+import PersonalInfo from './components/PersonalInfo';
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simule une temporisation de 3 secondes
     const timer = setTimeout(() => {
       setLoading(false);
     }, 5000);
@@ -42,6 +43,8 @@ export default function Home() {
       <About />
       <Projects />
       <Skills />
+      <PersonalInfo />
+      <MapWithMarkers />
       <Contact />
       <Footer />
     </>
