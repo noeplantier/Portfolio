@@ -10,7 +10,7 @@ export default function Hero() {
     frontend: false,
   });
 
-  const fullText = "Full-Stack Web & Mobile Developer";
+  const fullText = "Full Stack Web & Mobile Developer";
 
   useEffect(() => {
     let index = 0;
@@ -48,7 +48,7 @@ export default function Hero() {
 
       <div className={styles.heroImageContainer}>
         <Image
-          src="/images/CV-PIC.png"
+          src="/images/CV-PIC-2.png"
           alt="Noé Plantier"
           className={styles.heroImage}
           width={500} 

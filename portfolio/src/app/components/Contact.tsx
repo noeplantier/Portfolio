@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import styles from '../styles/contact.module.scss';
+import Image from 'next/image';
 
 export default function Contact() {
   const [displayedText, setDisplayedText] = useState<string>(''); // Typage explicite de l'état
@@ -21,9 +22,11 @@ export default function Contact() {
   }, []);
 
   return (
+
     <section id="contact" className={styles.contact}>
+       
       <h1>Contact Me</h1>
-      <h2 className={styles.typingText} style={{ color: '#fff' }}> {/* Correction de la couleur */}
+      <h2 className={styles.typingText} style={{ color: '#fff' }}> 
         {displayedText}
       </h2>
       <form>
@@ -49,6 +52,9 @@ export default function Contact() {
         </div>
         <button type="submit" className={styles.submitButton}>Envoyer</button>
       </form>
+      <Image src="/images/dev6.png" alt="desktop pic" className="vintage-image"      width={800}
+    height={700} />
     </section>
+    
   );
 }

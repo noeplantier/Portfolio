@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from 'react';
-import dynamic from 'next/dynamic'; // Utilisation de dynamic pour charger le composant conditionnellement
+import dynamic from 'next/dynamic'; 
 import Loader from './components/Loader'; 
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -10,9 +10,7 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import PersonalInfo from './components/PersonalInfo';
 
-// Chargement dynamique du composant MapWithMarkers uniquement côté client
 const MapWithMarkers = dynamic(() => import('./components/MapWithMarkers'), { ssr: false });
 
 export default function Home() {
@@ -43,9 +41,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <About />
-      {/* Affichage conditionnel du composant MapWithMarkers */}
       <MapWithMarkers />
-      <PersonalInfo />
       <Projects />
       <Skills />
       <Contact />

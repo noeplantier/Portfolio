@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import styles from '../styles/skills.module.scss';
+import Image from 'next/image';
 
 export default function Skills() {
   const [displayedText, setDisplayedText] = useState('');
@@ -30,15 +31,19 @@ export default function Skills() {
   }, []);
 
   const handleSkillClick = (url: string) => {
-    window.open(url, '_blank'); // Ouvre la documentation dans un nouvel onglet
+    window.open(url, '_blank'); 
   };
 
   return (
     <section id="skills" className={styles.skills}>
+        <Image src="/images/dev3.png" alt="desktop pic" className="macuser-image"  width={1200}
+                height={1500} />
       <h1>My Skills</h1>
       <h2 className={styles.typingText} style={{ color: '#ffffff' }}>
         {displayedText}
       </h2>
+
+         
       <div className={styles.skillList}>
         {skills.map((skill, index) => (
           <div 
@@ -47,9 +52,12 @@ export default function Skills() {
             onClick={() => handleSkillClick(skill.url)} 
             style={{ cursor: 'pointer' }} 
           >
+            
             <h3>{skill.name}</h3>
             <p>{skill.level}</p>
-          </div>
+         
+              
+              </div>   
         ))}
       </div>
     </section>

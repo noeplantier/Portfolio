@@ -13,7 +13,7 @@
     width: auto;
     height: auto;
     object-fit:cover;
-    border: 2px solid #298dff;
+    margin-top: -30rem;
 
   }
 
@@ -25,7 +25,6 @@
     transition: transform 0.3s ease;
     &:hover {
       transform: scale(1.0);
-      color:  #298dff;   
     }
   }
 
