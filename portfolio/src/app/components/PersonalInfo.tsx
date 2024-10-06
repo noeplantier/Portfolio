@@ -11,16 +11,16 @@ export default function PersonalInfo() {
         <div className={styles.socialIcons}>
  
           <a href="https://github.com/yourprofile" target="_blank">
-            <Image src="/image/github.png" alt="GitHub" width={40} height={40} />
+            <Image src="/images/github.png" alt="GitHub" width={100} height={100} />
           </a>
-          <a href="https://linkedin.com/in/yourprofile" target="_blank">
-            <Image src="/image/linkedin.png" alt="LinkedIn" width={40} height={40} />
+          <a href="https://linkedin.com/in/noeplantier" target="_blank">
+            <Image src="/images/linkedin.png" alt="LinkedIn" width={100} height={100} />
           </a>
           <a href="https://twitter.com/yourprofile" target="_blank">
-            <Image src="/image/twitter.png" alt="Twitter" width={40} height={40} />
+            <Image src="/images/twitter.png" alt="Twitter" width={100} height={100} />
           </a>
           <a href="https://stackoverflow.com/users/yourprofile" target="_blank">
-            <Image src="/image/stackoverflow.png" alt="Stack Overflow" width={40} height={40} />
+            <Image src="/images/stackoverflow.png" alt="Stack Overflow" width={100} height={100} />
           </a>
         </div>
       </div>

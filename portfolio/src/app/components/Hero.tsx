@@ -10,7 +10,7 @@ export default function Hero() {
     frontend: false,
   });
 
-  const fullText = "Fuull-Stack Web & Mobile Developer";
+  const fullText = "Full-Stack Web & Mobile Developer";
 
   useEffect(() => {
     let index = 0;
@@ -130,70 +130,54 @@ export default function Hero() {
       </div>
 
       <section className={styles.codeScreenshotsSection}>
-      <div className={styles.headerText}>
-        <h1>A few screenshots of my work</h1>
-        <h2 className={styles.typingText}>Have a look on several screens of my recents projects, under this h2 you can see the fast transition between my VSCode screen and the navigator</h2>
-      </div>
-        <div className={styles['code-screenshots']}>
+        <div className={styles.headerText}>
+          <h1>A few screenshots of my work</h1>
+          <h2 className={styles.typingText}>
+            Have a look at several screens of my recent projects! 
+            <br /> 
+            Below, you can see the transition between my VSCode screen and the navigator.
+          </h2>
+        </div>
+        <div className={styles.codeScreenshots}>
           <div
-            className={`${styles['image-container']} ${
-              flipped.fullstack ? styles.flipped : ''
-            }`}
+            className={`${styles.imageContainer} ${flipped.fullstack ? styles.flipped : ''}`}
             onMouseEnter={() => handleMouseEnter('fullstack')}
             onMouseLeave={() => handleMouseLeave('fullstack')}
           >
             <Image
-              src={
-                flipped.fullstack
-                  ? '/images/opartycode.png'
-                  : '/images/oparty.jpeg'
-              }
-              alt="Noé Plantier Fullstack Project"
-              className={`${styles['fullstack-image']} ${
-                flipped.fullstack ? styles.back : styles.front
-              }`}
-              width={1300} // width ajustée
-              height={1300} // height ajustée
+              src={flipped.fullstack ? '/images/opartycode.png' : '/images/oparty.jpeg'}
+              alt="Fullstack Project"
+              className={`${styles.fullstackImage} ${flipped.fullstack ? styles.back : styles.front}`}
+              width={1300}
+              height={700}
             />
           </div>
 
           <div
-            className={`${styles['image-container']} ${
-              flipped.backend ? styles.flipped : ''
-            }`}
+            className={`${styles.imageContainer} ${flipped.backend ? styles.flipped : ''}`}
             onMouseEnter={() => handleMouseEnter('backend')}
             onMouseLeave={() => handleMouseLeave('backend')}
           >
             <Image
-              src={
-                flipped.backend ? '/images/immocode.png' : '/images/immo.jpeg'
-              }
-              alt="Noé Plantier Backend Project"
-              className={`${styles['backend-image']} ${
-                flipped.backend ? styles.back : styles.front
-              }`}
-              width={1300} 
-              height={1300} 
+              src={flipped.backend ? '/images/immocode.png' : '/images/immo.jpeg'}
+              alt="Backend Project"
+              className={`${styles.backendImage} ${flipped.backend ? styles.back : styles.front}`}
+              width={1300}
+              height={1000}
             />
           </div>
 
           <div
-            className={`${styles['image-container']} ${
-              flipped.frontend ? styles.flipped : ''
-            }`}
+            className={`${styles.imageContainer} ${flipped.frontend ? styles.flipped : ''}`}
             onMouseEnter={() => handleMouseEnter('frontend')}
             onMouseLeave={() => handleMouseLeave('frontend')}
           >
             <Image
-              src={
-                flipped.frontend ? '/images/tecumcode.png' : '/images/tecum.jpeg'
-              }
-              alt="Noé Plantier Frontend Project"
-              className={`${styles['frontend-image']} ${
-                flipped.frontend ? styles.back : styles.front
-              }`}
-              width={1300} // width ajustée
-              height={1300} // height ajustée
+              src={flipped.frontend ? '/images/tecumcode.png' : '/images/tecum.jpeg'}
+              alt="Frontend Project"
+              className={`${styles.frontendImage} ${flipped.frontend ? styles.back : styles.front}`}
+              width={1300}
+              height={1000}
             />
           </div>
         </div>

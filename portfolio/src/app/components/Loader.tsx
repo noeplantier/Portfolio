@@ -8,7 +8,7 @@ export default function Loader() {
       setProgress((prevProgress) =>
         prevProgress < 100 ? prevProgress + 1 : 100
       );
-    }, 20); // Vitesse du chargement
+    }, 10); // Vitesse du chargement
 
     return () => clearInterval(interval);
   }, []);
@@ -21,11 +21,7 @@ export default function Loader() {
         </div>
         <p style={styles.progressText}>{progress}%</p>
       </div>
-      <div style={styles.card}>
-        <h2>Noé Plantier</h2>
-        <p>Développeur Fullstack</p>
-        <p>Bordeaux, France</p>
-      </div>
+   
     </div>
   );
 }
@@ -61,11 +57,5 @@ const styles = {
     marginTop: '20px',
     fontSize: '20px',
   },
-  card: {
-    backgroundColor: '#00d1ff',
-    padding: '50px',
-    borderRadius: '10px',
-    boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)',
-    textAlign: 'center',
-  },
+
 };

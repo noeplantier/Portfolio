@@ -7,7 +7,8 @@ import Image from 'next/image';
 
 export default function About() {
   const [displayedText, setDisplayedText] = useState('');
-  const fullText = "I''m a Fullstack Web and Mobile Developer with a background in UI/UX design and a passion for building interactive, user-friendly websites and applications. I have experience with technologies like React, Next.js, and Node.js, and I always strive to stay up-to-date with the latest industry trends."
+  const fullText = "I''m a Fullstack Web and Mobile Developer with a background in UI/UX design."
+  "I also got a passion for building interactive, user-friendly securised websites and applications ."
 
   useEffect(() => {
     let index = 0;
@@ -28,8 +29,12 @@ export default function About() {
       <h2 className={styles.typingText} style={{ color: '#fff' }}>
         {displayedText}
       </h2>
-      <Image src="/images/codingplanet.png" alt="Noé Plantier" className="logo-image"      width={1300}
-          height={1300} />
+      <Image src="/images/prog.jpeg" alt="developer pic" className="logo-image"      width={800}
+          height={800} />
+          <Image src="/images/UI.jpg" alt="UI pic" className="logo-image"      width={800}
+          height={800} />
+          <Image src="/images/desktop.jpeg" alt="desktop pic" className="logo-image"      width={800}
+          height={800} />
     </section>
   );
 }
