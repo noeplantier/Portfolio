@@ -54,22 +54,28 @@
   margin-block: 3rem;
 
 
+
   .heroImage {
     margin-bottom: -1rem;
     margin-top: -8rem;
     object-fit: cover;
+    border: 2px solid #298dff;
+    border-radius: 50%;
+
   }
 }
 
 .codeScreenshotsSection {
   margin-top: 20rem;
   gap: 3rem;
+  
 
   .code-screenshots {
     display:inline-block;
     justify-content: center;
     gap: 3rem;
     margin-bottom: 3rem;
+
 
     .image-container {
       width: 1200px;
@@ -86,6 +92,7 @@
         transition: transform 0.001s ease-in-out;
         backface-visibility: hidden;
         margin-top: 5%;
+
 
       }
 

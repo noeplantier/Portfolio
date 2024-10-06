@@ -29,12 +29,12 @@ export default function About() {
       <h2 className={styles.typingText} style={{ color: '#fff' }}>
         {displayedText}
       </h2>
-      <Image src="/images/prog.jpeg" alt="developer pic" className="logo-image"      width={800}
+      <Image src="/images/prog.jpeg" alt="developer pic" className="development-image"      width={1200}
           height={800} />
-          <Image src="/images/UI.jpg" alt="UI pic" className="logo-image"      width={800}
-          height={800} />
-          <Image src="/images/desktop.jpeg" alt="desktop pic" className="logo-image"      width={800}
-          height={800} />
+          <Image src="/images/UI.jpg" alt="UI pic" className="development-image"      width={1200}
+          height={700} />
+          <Image src="/images/desktop.png" alt="desktop pic" className="development-image"      width={1200}
+          height={700} />
     </section>
   );
 }

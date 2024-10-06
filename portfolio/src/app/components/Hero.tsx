@@ -148,7 +148,7 @@ export default function Hero() {
               src={flipped.fullstack ? '/images/opartycode.png' : '/images/oparty.jpeg'}
               alt="Fullstack Project"
               className={`${styles.fullstackImage} ${flipped.fullstack ? styles.back : styles.front}`}
-              width={1300}
+              width={1200}
               height={700}
             />
           </div>
@@ -162,8 +162,8 @@ export default function Hero() {
               src={flipped.backend ? '/images/immocode.png' : '/images/immo.jpeg'}
               alt="Backend Project"
               className={`${styles.backendImage} ${flipped.backend ? styles.back : styles.front}`}
-              width={1300}
-              height={1000}
+              width={1200}
+              height={700}
             />
           </div>
 
@@ -176,8 +176,8 @@ export default function Hero() {
               src={flipped.frontend ? '/images/tecumcode.png' : '/images/tecum.jpeg'}
               alt="Frontend Project"
               className={`${styles.frontendImage} ${flipped.frontend ? styles.back : styles.front}`}
-              width={1300}
-              height={1000}
+              width={1200}
+              height={700}
             />
           </div>
         </div>
