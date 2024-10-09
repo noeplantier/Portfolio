@@ -34,25 +34,32 @@ export default function Projects() {
       <div className={styles.projectList}>
         {projects.map((project, index) => (
           <div key={index} className={styles.projectCard}>
-            <Image 
-              src={project.image} 
-              alt={project.title} 
-              width={300} 
-              height={200} 
-              className={styles.projectImage} 
-            />
+        
             <h3>{project.title}</h3>
             <p>{project.description}</p>
             <div className={styles.technologies}>
+         
+           
               {project.technologies.map((tech, techIndex) => (
                 <div key={techIndex} className={styles.techTag}>
                   {tech}
+               
                 </div>
+              
               ))}
             </div>
-          </div>
+   <Image 
+                    src={project.image} 
+                    alt={project.title} 
+                    width={300} 
+                    height={200} 
+                    className={styles.projectImage} 
+                  />
+          </div>  
         ))}
+      
       </div>
+     
     </section>
   );
 }
