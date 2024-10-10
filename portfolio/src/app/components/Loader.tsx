@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, CSSProperties } from 'react';
 
 export default function Loader() {
   const [progress, setProgress] = useState(0);
@@ -21,16 +21,15 @@ export default function Loader() {
         </div>
         <p style={styles.progressText}>{progress}%</p>
       </div>
-   
     </div>
   );
 }
 
-const styles = {
+const styles: { [key: string]: CSSProperties } = {
   container: {
     height: '100vh',
     display: 'flex',
-    flexDirection: 'column',
+    flexDirection: 'column', // Utilisation correcte de flexDirection
     justifyContent: 'center',
     alignItems: 'center',
     background: 'linear-gradient(135deg, #001f3f, #005f7f)',
@@ -57,5 +56,4 @@ const styles = {
     marginTop: '20px',
     fontSize: '20px',
   },
-
 };

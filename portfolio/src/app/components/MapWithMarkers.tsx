@@ -1,4 +1,5 @@
-"use client"
+"use client";
+
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import styles from '../styles/map.module.scss';
@@ -16,8 +17,7 @@ const customIcon = new L.Icon({
 
 export default function MapWithMarkers() {
   useEffect(() => {
-    // Corriger l'affichage des icônes dans Next.js
-    delete L.Icon.Default.prototype._getIconUrl;
+    // Utilisation de la méthode propre pour définir les icônes sans interférer avec _getIconUrl
     L.Icon.Default.mergeOptions({
       iconRetinaUrl: '/icons/marker-icon-2x.png',
       iconUrl: '/icons/marker-icon.png',

@@ -1,0 +1,50 @@
+[debug] [2024-10-10T09:15:46.534Z] ----------------------------------------------------------------------
+[debug] [2024-10-10T09:15:46.539Z] Command:       /Users/user/.nvm/versions/node/v20.16.0/bin/node /Users/user/.nvm/versions/node/v20.16.0/bin/firebase deploy
+[debug] [2024-10-10T09:15:46.540Z] CLI Version:   13.22.0
+[debug] [2024-10-10T09:15:46.540Z] Platform:      darwin
+[debug] [2024-10-10T09:15:46.540Z] Node Version:  v20.16.0
+[debug] [2024-10-10T09:15:46.540Z] Time:          Thu Oct 10 2024 11:15:46 GMT+0200 (heure d’été d’Europe centrale)
+[debug] [2024-10-10T09:15:46.540Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-10-10T09:15:46.751Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-10-10T09:15:46.752Z] > authorizing via signed-in user (plantiernoe50@gmail.com)
+[debug] [2024-10-10T09:15:46.752Z] [iam] checking project portfolio-noeplantier for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-10-10T09:15:46.754Z] Checked if tokens are valid: true, expires at: 1728554960475
+[debug] [2024-10-10T09:15:46.755Z] Checked if tokens are valid: true, expires at: 1728554960475
+[debug] [2024-10-10T09:15:46.757Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-noeplantier:testIamPermissions [none]
+[debug] [2024-10-10T09:15:46.757Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-noeplantier:testIamPermissions x-goog-quota-user=projects/portfolio-noeplantier
+[debug] [2024-10-10T09:15:46.757Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-noeplantier:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-10-10T09:15:48.143Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-noeplantier:testIamPermissions 200
+[debug] [2024-10-10T09:15:48.144Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-noeplantier:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-10-10T09:15:48.145Z] Checked if tokens are valid: true, expires at: 1728554960475
+[debug] [2024-10-10T09:15:48.145Z] Checked if tokens are valid: true, expires at: 1728554960475
+[debug] [2024-10-10T09:15:48.145Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-noeplantier [none]
+[debug] [2024-10-10T09:15:48.750Z] *** [apiv2] error from fetch(https://firebase.googleapis.com/v1beta1/projects/portfolio-noeplantier, {"headers":{},"method":"GET","signal":{}}): FetchError: request to https://firebase.googleapis.com/v1beta1/projects/portfolio-noeplantier failed, reason: unable to verify the first certificate
+[debug] [2024-10-10T09:15:48.750Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/portfolio-noeplantier (original: request to https://firebase.googleapis.com/v1beta1/projects/portfolio-noeplantier failed, reason: unable to verify the first certificate)
+[error] 
+[error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier
+[debug] [2024-10-10T09:38:18.608Z] ----------------------------------------------------------------------
+[debug] [2024-10-10T09:38:18.613Z] Command:       /Users/user/.nvm/versions/node/v20.16.0/bin/node /Users/user/.nvm/versions/node/v20.16.0/bin/firebase deploy
+[debug] [2024-10-10T09:38:18.613Z] CLI Version:   13.22.0
+[debug] [2024-10-10T09:38:18.613Z] Platform:      darwin
+[debug] [2024-10-10T09:38:18.613Z] Node Version:  v20.16.0
+[debug] [2024-10-10T09:38:18.613Z] Time:          Thu Oct 10 2024 11:38:18 GMT+0200 (heure d’été d’Europe centrale)
+[debug] [2024-10-10T09:38:18.614Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-10-10T09:38:18.728Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-10-10T09:38:18.729Z] > authorizing via signed-in user (plantiernoe50@gmail.com)
+[debug] [2024-10-10T09:38:18.729Z] [iam] checking project portfolio-noeplantier for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-10-10T09:38:18.731Z] Checked if tokens are valid: true, expires at: 1728554960475
+[debug] [2024-10-10T09:38:18.731Z] Checked if tokens are valid: true, expires at: 1728554960475
+[debug] [2024-10-10T09:38:18.732Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-noeplantier:testIamPermissions [none]
+[debug] [2024-10-10T09:38:18.732Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-noeplantier:testIamPermissions x-goog-quota-user=projects/portfolio-noeplantier
+[debug] [2024-10-10T09:38:18.733Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-noeplantier:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-10-10T09:38:19.569Z] *** [apiv2] error from fetch(https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-noeplantier:testIamPermissions, {"headers":{},"method":"POST","body":"{\"permissions\":[\"firebase.projects.get\",\"firebasehosting.sites.update\"]}"}): FetchError: request to https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-noeplantier:testIamPermissions failed, reason: unable to verify the first certificate
+[debug] [2024-10-10T09:38:19.570Z] [iam] error while checking permissions, command may fail: FirebaseError: Failed to make request to https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-noeplantier:testIamPermissions
+[debug] [2024-10-10T09:38:19.571Z] Checked if tokens are valid: true, expires at: 1728554960475
+[debug] [2024-10-10T09:38:19.571Z] Checked if tokens are valid: true, expires at: 1728554960475
+[debug] [2024-10-10T09:38:19.571Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-noeplantier [none]
+[debug] [2024-10-10T09:38:20.159Z] *** [apiv2] error from fetch(https://firebase.googleapis.com/v1beta1/projects/portfolio-noeplantier, {"headers":{},"method":"GET","signal":{}}): FetchError: request to https://firebase.googleapis.com/v1beta1/projects/portfolio-noeplantier failed, reason: unable to verify the first certificate
+[debug] [2024-10-10T09:38:20.160Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/portfolio-noeplantier (original: request to https://firebase.googleapis.com/v1beta1/projects/portfolio-noeplantier failed, reason: unable to verify the first certificate)
+[error] 
+[error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier
