@@ -7,8 +7,8 @@ import Image from 'next/image';
 
 export default function About() {
   const [displayedText, setDisplayedText] = useState('');
-  const fullText = "I''m a Fullstack Web and Mobile Developer with a background in UI/UX design."
-  "I also got a passion for building interactive, user-friendly securised websites and applications ."
+  const fullText = "I''m a Full Stack Web and Mobile Developer with a crazy background in UI/UX design."
+  "I also got a passion for building interactive & user-friendly securised websites and applications ."
 
   useEffect(() => {
     let index = 0;
