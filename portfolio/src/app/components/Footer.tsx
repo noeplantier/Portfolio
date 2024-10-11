@@ -24,11 +24,11 @@ export default function Footer() {
         <div className="footer-section">
           <h3>Social Networks</h3>
           <ul className="footer-social">
-            <li><a href="https://github.com">GitHub</a></li>
-            <li><a href="https://linkedin.com">LinkedIn</a></li>
-            <li><a href="https://twitter.com">Twitter</a></li>
-            <li><a href="https://www.dev.to">Dev.to</a></li>
-            <li><a href="https://stackoverflow.com">Stack Overflow</a></li>
+            <li><a href="https://github.com/noeplantier">GitHub</a></li>
+            <li><a href="https://github.com/noeplantier">LinkedIn</a></li>
+            <li><a href="https://oclock-pro.slack.com/team/U06FF0AEYQM">Slack</a></li>
+            <li><a href="https://discord.com/api/webhooks/1294325063272894484/Ua6jQxZ66QwK8lPpYwBvkYAFAo-01NcGjj77adsjnKzRTQkKXKJwGUSGTVpFbKLW1ysz">Discord</a></li>
+            <li><a href="https://stackoverflow.com/users/23502476/noé">Stack Overflow</a></li>
           </ul>
         </div>
 

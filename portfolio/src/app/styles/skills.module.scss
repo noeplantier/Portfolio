@@ -22,6 +22,20 @@
     color: #555;
   }
 
+  .desktop-image{
+
+    justify-content: left;
+    width: auto;
+    height: auto;
+    object-fit:cover;
+    margin-top: -30rem;
+
+    transition: transform 0.5s ease; 
+    
+    &:hover {
+      transform: scale(1.1); 
+    }
+  }
 
   .skillList {
     display: flex;

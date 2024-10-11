@@ -75,57 +75,57 @@ export default function Hero() {
           src="https://freesvg.org/img/1486641506.png"
           alt="JavaScript Logo"
           className={styles.techLogo}
-          width={100}
-          height={100}
+          width={150}
+          height={150}
         />
         <Image
           src="https://icons.veryicon.com/png/o/business/vscode-program-item-icon/typescript.png"
           alt="TypeScript Logo"
           className={styles.techLogo}
-          width={100}
-          height={100}
+          width={150}
+          height={150}
         />
         <Image
           src="https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png"
           alt="Node.js Logo"
           className={styles.techLogo}
-          width={100}
-          height={100}
+          width={150}
+          height={150}
         />
         <Image
           src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"
           alt="React Logo"
           className={styles.techLogo}
-          width={100}
-          height={100}
+          width={150}
+          height={150}
         />
         <Image
           src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/nextjs-icon.png"
           alt="Next.js Logo"
           className={styles.techLogo}
-          width={100}
-          height={100}
+          width={150}
+          height={150}
         />
         <Image
-          src="https://seeklogo.com/images/P/php-logo-91EFDB12E1-seeklogo.com.png"
+          src="https://cdn-icons-png.flaticon.com/512/5968/5968332.png"
           alt="PHP Logo"
           className={styles.techLogo}
-          width={100}
-          height={100}
+          width={150}
+          height={150}
         />
         <Image
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png"
           alt="Python Logo"
           className={styles.techLogo}
-          width={100}
-          height={100}
+          width={150}
+          height={150}
         />
         <Image
           src="https://img.icons8.com/color/512/sass-avatar.png"
           alt="SASS Logo"
           className={styles.techLogo}
-          width={100}
-          height={100}
+          width={150}
+          height={150}
         />
       </div>
 
