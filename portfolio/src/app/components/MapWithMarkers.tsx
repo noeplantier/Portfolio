@@ -27,7 +27,7 @@ export default function MapWithMarkers() {
 
   return (
     <section className={styles.mapContainer}>
-      <MapContainer center={[47.5, 2.5]} zoom={5} style={{ height: '700px', width: '100%' }}>
+      <MapContainer center={[45, 1.3]} zoom={5} style={{ height: '500px', width: '800px' }}>
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

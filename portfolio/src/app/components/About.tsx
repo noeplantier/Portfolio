@@ -7,13 +7,15 @@ import Image from 'next/image';
 
 export default function About() {
   const [displayedText, setDisplayedText] = useState('');
-  const fullText = "I''m a Full Stack Web and Mobile Developer with a crazy background in UI/UX design.I also got a passion for building interactive & user-friendly securised websites and applications ."
+  const secondText = 'I love so much coding after midnight..'
+
+
 
   useEffect(() => {
     let index = 0;
     const typingInterval = setInterval(() => {
-      if (index < fullText.length) {
-        setDisplayedText((prev) => prev + fullText.charAt(index)); // Utilisation de charAt pour un accès sécurisé
+      if (index < secondText.length) {
+        setDisplayedText((prev) => prev + secondText.charAt(index)); // Utilisation de charAt pour un accès sécurisé
         index++;
       } else {
         clearInterval(typingInterval);
@@ -25,12 +27,25 @@ export default function About() {
   return (
     <section id="about" className={styles.about}>
       <h1>What about me ?</h1>
-      <h2 className={styles.typingText} style={{ color: '#fff' }}>
-        {displayedText}
-      </h2>
+      <h2 className='firstText' style={{ color: '#fff' }}>I'm a Full Stack Web and Mobile Developer with a crazy background in UI/UX design.    
+       I also got a passion for building interactive & user-friendly securised websites and applications .</h2>
+
+
+
      <Image src="/images/dev4.png" alt="desktop pic" className="development-image"      width={1200}
           height={700} />
+          
+                <h1>Where can you physically find me </h1>
+      <h2 className='secondText' style={{ color: '#fff' }}>Currently based on Tours and Bordeaux, I'm also regularly on Paris for business opportunities.</h2>
        
     </section>
   );
 }
+
+
+
+
+
+
+     
+

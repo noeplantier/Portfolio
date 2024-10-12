@@ -10,7 +10,7 @@ export default function Hero() {
     frontend: false,
   });
 
-  const fullText = "Fuull Stack Web & Mobile Dev";
+  const fullText = 'Webb & Mobile Developer';
 
   useEffect(() => {
     let index = 0;
@@ -51,8 +51,8 @@ export default function Hero() {
           src="/images/CV-PIC-2.png"
           alt="Noé Plantier"
           className={styles.heroImage}
-          width={500} 
-          height={500} 
+          width={400} 
+          height={400} 
         />
       </div>
 
@@ -114,7 +114,7 @@ export default function Hero() {
           height={150}
         />
         <Image
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png"
+          src="https://cdn.iconscout.com/icon/free/png-256/free-python-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-vol-5-pack-logos-icons-2945099.png?f=webp&w=256"
           alt="Python Logo"
           className={styles.techLogo}
           width={150}
@@ -133,7 +133,7 @@ export default function Hero() {
         <div className={styles.headerText}>
           <h1>A few screenshots of my work</h1>
           <h2 className={styles.typingText}>
-            Have a look at several screens of my recent projects! 
+            Have a look at several screens of my recent projects ! 
             <br /> 
             Below, you can see the transition between my VSCode screen and the navigator.
           </h2>
