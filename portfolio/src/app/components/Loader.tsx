@@ -29,7 +29,7 @@ const styles: { [key: string]: CSSProperties } = {
   container: {
     height: '100vh',
     display: 'flex',
-    flexDirection: 'column', // Utilisation correcte de flexDirection
+    flexDirection: 'column', 
     justifyContent: 'center',
     alignItems: 'center',
     background: 'linear-gradient(135deg, #001f3f, #005f7f)',
@@ -38,17 +38,17 @@ const styles: { [key: string]: CSSProperties } = {
   },
   loaderContainer: {
     textAlign: 'center',
-    marginBottom: '50px',
+    marginBottom: '5rem',
   },
   loader: {
     width: '500px',
     height: '20px',
     backgroundColor: '#fff',
-    borderRadius: '5px',
+    borderRadius: '15px',
     overflow: 'hidden',
   },
   progressBar: {
-    height: '100%',
+    height: '80vh',
     backgroundColor: '#00d1ff',
     transition: 'width 0.3s ease',
   },

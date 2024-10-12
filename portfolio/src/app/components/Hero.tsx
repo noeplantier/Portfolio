@@ -10,7 +10,7 @@ export default function Hero() {
     frontend: false,
   });
 
-  const fullText = "Full Stack Web & Mobile Developer";
+  const fullText = "Fuull Stack Web & Mobile Dev";
 
   useEffect(() => {
     let index = 0;
