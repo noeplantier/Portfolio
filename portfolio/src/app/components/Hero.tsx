@@ -41,12 +41,20 @@ export default function Hero() {
 
   return (
     <section id="hero" className={styles.hero}>
-      <div className={styles.headerText}>
-        <h1>Noé Plantier</h1>
-        <h2 className={styles.typingText}>{displayedText}</h2>
-      </div>
 
-      <div className={styles.heroImageContainer}>
+
+         <Image
+              src='/images/Bannière marron.png'
+              alt="brown_ban"
+              className="brown_ban"
+              width={1500}
+              height={450}
+            />
+              <h1>What about me ?</h1>
+      <h2 className='firstText' style={{ color: '#fff' }}>I'm a Full Stack Web and Mobile Developer with a crazy background in UI/UX design.   </h2> 
+
+
+          <div className={styles.heroImageContainer}>
         <Image
           src="/images/CV-PIC-2.png"
           alt="Noé Plantier"

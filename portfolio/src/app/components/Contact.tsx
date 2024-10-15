@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function Contact() {
   const [displayedText, setDisplayedText] = useState<string>(''); // Typage explicite de l'état
-  const fullText = "If you'd like to discuss a project or have any questions, feel free to reach out to me through the following methods:";
+  const fullText = "Feel free to reach out to me through the following methods :";
 
   useEffect(() => {
     let index = 0;
@@ -26,8 +26,8 @@ export default function Contact() {
     <section id="contact" className={styles.contact}>
        
       <h1>Contact Me</h1>
-      <h2 className={styles.typingText} style={{ color: '#fff' }}> 
-        {displayedText}
+      <h2 > 
+      Feel free to reach out to me through the following methods :
       </h2>
       <form>
         <div className={styles.formGroup}>

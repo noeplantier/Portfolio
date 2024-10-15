@@ -26,18 +26,12 @@ export default function About() {
 
   return (
     <section id="about" className={styles.about}>
-      <h1>What about me ?</h1>
-      <h2 className='firstText' style={{ color: '#fff' }}>I'm a Full Stack Web and Mobile Developer with a crazy background in UI/UX design.    
-       I also got a passion for building interactive & user-friendly securised websites and applications .</h2>
-
-
-
-     <Image src="/images/dev4.png" alt="desktop pic" className="development-image"      width={1200}
+  
+                <h1>Where can you physically find me </h1>
+      <h2 className='secondText' style={{ color: '#fff' }}>Currently based on Tours and Bordeaux, I'm also regularly on Paris !</h2>
+      <Image src="/images/dev4.png" alt="desktop pic" className="development-image"      width={1200}
           height={700} />
           
-                <h1>Where can you physically find me </h1>
-      <h2 className='secondText' style={{ color: '#fff' }}>Currently based on Tours and Bordeaux, I'm also regularly on Paris for business opportunities.</h2>
-       
     </section>
   );
 }

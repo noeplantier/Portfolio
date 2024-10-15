@@ -39,8 +39,8 @@ export default function Skills() {
         <Image src="/images/dev3.png" alt="desktop pic" className="macuser-image"  width={1200}
                 height={1500} />
       <h1>My Skills</h1>
-      <h2 className={styles.typingText} style={{ color: '#ffffff' }}>
-        {displayedText}
+      <h2 >
+      Some of the technologies and tools I am proficient in..
       </h2>
 
          

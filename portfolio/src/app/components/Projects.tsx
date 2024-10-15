@@ -36,7 +36,7 @@ export default function Projects() {
           <div key={index} className={styles.projectCard}>
         
             <h3>{project.title}</h3>
-            <p>{project.description}</p>
+        
             <div className={styles.technologies}>
          
            
@@ -46,13 +46,13 @@ export default function Projects() {
                
                 </div>
               
-              ))}
+              ))}    <h4>{project.description}</h4>
             </div>
    <Image 
                     src={project.image} 
                     alt={project.title} 
-                    width={300} 
-                    height={200} 
+                    width={400} 
+                    height={300} 
                     className={styles.projectImage} 
                   />
           </div>  
