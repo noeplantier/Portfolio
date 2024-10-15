@@ -48,7 +48,7 @@ export default function Hero() {
               alt="brown_ban"
               className="brown_ban"
               width={1500}
-              height={450}
+              height={400}
             />
               <h1>What about me ?</h1>
       <h2 className='firstText' style={{ color: '#fff' }}>I'm a Full Stack Web and Mobile Developer with a crazy background in UI/UX design.   </h2> 
